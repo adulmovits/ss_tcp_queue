@@ -56,6 +56,6 @@ class ss_tcp_queue(AgentCheck):
             cols = l.split()
 
             ip, port=cols[3].rsplit(':', 1)
-            print(cols[1], cols[2], cols[3], port)
+            #print(cols[1], cols[2], cols[3], port)
             self.gauge("ss.listening.recvq", cols[1], tags=["port:"+str(port), "type:tcp"])
             self.gauge("ss.listening.sendq", cols[2], tags=["port:"+str(port), "type:tcp"])
