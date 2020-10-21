@@ -51,7 +51,7 @@ class ss_tcp_queue(AgentCheck):
 
         lines = output.splitlines()
 
-        # Parse to output into Datadog metrics
+        # Parse the output into Datadog metrics
         for l in lines[1:]:
             cols = l.split()
 
