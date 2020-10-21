@@ -5,7 +5,7 @@ Custom Datadog agent check for collecting TCP queue metrics using "ss" command
 
 ## Description
 
-This check runs the command "ss --numeric --listening --tcp" on the host and parses the output to collect Send-Q and Recv-Q bytes broken down by port.
+This check runs the command `ss --numeric --listening --tcp` every 1 second on the host and parses the output to collect Send-Q and Recv-Q bytes broken down by port.
 
 ## Metrics Collected
 
